@@ -154,7 +154,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Pokemon.cpp" />
+    <ClCompile Include="Battle\BattleManager.cpp" />
+    <ClCompile Include="Battle\WildEncounterManager.cpp" />
+    <ClCompile Include="Character\Player\Player.cpp" />
+    <ClCompile Include="Character\ProfessorOak.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Main\Game.cpp" />
+    <ClCompile Include="Pokemon\Pokemon.cpp" />
+    <ClCompile Include="Pokemon\Pokemons\Caterpie.cpp" />
+    <ClCompile Include="Pokemon\Pokemons\Charmander.cpp" />
+    <ClCompile Include="Pokemon\Pokemons\Pidgey.cpp" />
+    <ClCompile Include="Pokemon\Pokemons\Pikachu.cpp" />
+    <ClCompile Include="Pokemon\Pokemons\Zubat.cpp" />
+    <ClCompile Include="Utility\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Battle\BattleManager.hpp" />
+    <ClInclude Include="Battle\BattleState.hpp" />
+    <ClInclude Include="Battle\WildEncounterManager.hpp" />
+    <ClInclude Include="Character\Player\Player.hpp" />
+    <ClInclude Include="Character\ProfessorOak.hpp" />
+    <ClInclude Include="Main\Game.hpp" />
+    <ClInclude Include="Pokemon\Grass.hpp" />
+    <ClInclude Include="Pokemon\Pokemon.hpp" />
+    <ClInclude Include="Pokemon\PokemonChoice.hpp" />
+    <ClInclude Include="Pokemon\Pokemons\Caterpie.hpp" />
+    <ClInclude Include="Pokemon\Pokemons\Charmander.hpp" />
+    <ClInclude Include="Pokemon\Pokemons\Pidgey.hpp" />
+    <ClInclude Include="Pokemon\Pokemons\Pikachu.hpp" />
+    <ClInclude Include="Pokemon\Pokemons\Zubat.hpp" />
+    <ClInclude Include="Pokemon\PokemonType.hpp" />
+    <ClInclude Include="Utility\Utility.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
+    <Content Include=".idea\.idea.Pokemon\.idea\vcs.xml" />
+    <Content Include=".idea\.idea.Pokemon\.idea\workspace.xml" />
+    <Content Include="Pokemon.vcxproj.filters" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
