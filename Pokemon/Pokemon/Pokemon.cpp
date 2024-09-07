@@ -1,11 +1,12 @@
 #include "Pokemon.hpp"
 #include "PokemonType.hpp"
 #include <iostream>
+using namespace std;
 
 namespace N_Pokemon {
 
   // Default constructor
-  N_Pokemon::Pokemon::Pokemon() {
+  Pokemon::Pokemon() {
     name = "Unknown";
     type = PokemonType::NORMAL;
     health = 50;
@@ -14,7 +15,7 @@ namespace N_Pokemon {
   }
   
   // Parameterized constructor
-  N_Pokemon::Pokemon::Pokemon(std::string p_name, PokemonType p_type, int p_health,
+  Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health,
                    int p_attackPower) {
     name = p_name;
     type = p_type;
@@ -24,16 +25,16 @@ namespace N_Pokemon {
   }
   
   // Copy constructor
-  N_Pokemon::Pokemon::Pokemon(const Pokemon &other) {
-    name = other.name;
-    type = other.type;
-    health = other.health;
-    maxHealth = other.maxHealth;
-    attackPower = other.attackPower;
+  Pokemon::Pokemon(Pokemon* other) {
+    name = other->name;
+    type = other->type;
+    health = other->health;
+    maxHealth = other->maxHealth;
+    attackPower = other->attackPower;
   }
   
   // Reduce HP by the damage amount
-  void N_Pokemon::Pokemon::takeDamage(int damage) {
+  void Pokemon::takeDamage(int damage) {
     health -= damage;
     if (health < 0) {
       health = 0;
@@ -41,15 +42,15 @@ namespace N_Pokemon {
   }
   
   // Check if the Pokemon has fainted
-  bool N_Pokemon::Pokemon::isFainted() const { return health <= 0; }
+  bool Pokemon::isFainted() const { return health <= 0; }
   
   // Restore health to full
-  void N_Pokemon::Pokemon::heal() { health = maxHealth; }
+  void Pokemon::heal() { health = maxHealth; }
   
   // Attack another Pokemon
-  void N_Pokemon::Pokemon::attack(Pokemon &target) {
-    std::cout << name << " attacks " << target.name << " for " << attackPower
+  void Pokemon::attack(Pokemon* target) {
+    std::cout << name << " attacks " << target->name << " for " << attackPower
               << " damage!\n";
-    target.takeDamage(attackPower);
+    target->takeDamage(attackPower);
   }
 } // namespace N_Pokemon

@@ -7,7 +7,7 @@ namespace N_Pokemon {
     class Caterpie : public Pokemon {
     public:
       Caterpie();
-      void bugBite(Pokemon &target);
+      void bugBite(Pokemon* target);
     };
 
   }

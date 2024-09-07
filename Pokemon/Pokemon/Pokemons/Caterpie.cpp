@@ -8,11 +8,11 @@ namespace N_Pokemon {
     
     using namespace std;
     
-    N_Pokemon::N_Pokemons::Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::BUG, 100, 10) {}
+    Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::BUG, 100, 10) {}
     
-    void N_Pokemon::N_Pokemons::Caterpie::bugBite(Pokemon &target) {
-      cout << name << " uses Bug Bite on " << target.name << "!\n";
-      target.takeDamage(20);
+    void Caterpie::bugBite(Pokemon* target) {
+      cout << name << " uses Bug Bite on " << target->name << "!\n";
+      target->takeDamage(20);
     }
   }
 }
