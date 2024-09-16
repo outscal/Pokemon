@@ -1,6 +1,5 @@
 #include "Pokemon.hpp"
 #include "PokemonType.hpp"
-#include "Move.hpp"
 #include <iostream>
 
 #include "../Utility/Utility.hpp"
@@ -45,7 +44,6 @@ namespace N_Pokemon {
   void Pokemon::selectAndUseMove(Pokemon* target)
   {
     printAvailableMoves();
-    N_Utility::Utility::waitForEnter();
 
     int choice = selectMove();
     Move selectedMove = moves[choice-1];
@@ -94,7 +92,6 @@ namespace N_Pokemon {
       cout << target->name << " fainted!\n";
     else
       cout << target->name << " has " << target->health << " HP left.\n";
-    N_Utility::Utility::waitForEnter();
   }
 
   // Check if the Pokemon has fainted

@@ -8,7 +8,8 @@ namespace N_Pokemon {
     ELECTRIC,
     NORMAL,
     POISON,
-    BUG
+    BUG,
+    FLYING
   };
 
 }
