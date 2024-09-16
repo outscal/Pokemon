@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include "Player/Player.hpp"
 
 class Player;

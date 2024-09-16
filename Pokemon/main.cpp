@@ -1,12 +1,8 @@
-#include "Main/Game.hpp"
-#include "Character/Player/Player.hpp"
-#include "Pokemon/PokemonChoice.hpp"
-#include "Pokemon/PokemonType.hpp"
-#include "Character/ProfessorOak.hpp"
-#include "Utility/Utility.hpp"
+#include "include/Main/Game.hpp"
+#include "include/Character/Player/Player.hpp"
+#include "include/Character/ProfessorOak.hpp"
 #include <iostream>
 #include <limits> // Include this header to use std::numeric_limits
-#include <string>
 
 using namespace N_Character;
 using namespace N_Player;

@@ -1,5 +1,3 @@
-#include <vector>
-
 #include "../Pokemon/Pokemon.hpp"
 
 namespace N_Pokemon

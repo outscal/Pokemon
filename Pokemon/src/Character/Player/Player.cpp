@@ -1,12 +1,11 @@
-#include "Player.hpp"
-#include "../../Pokemon/PokemonChoice.hpp"
-#include "../../Pokemon/PokemonType.hpp"
-#include "../../Pokemon/Pokemons/Pikachu.hpp"
-#include "../../Utility/Utility.hpp"
 #include "iostream"
-#include "../../Pokemon/Pokemons/Bulbasaur.hpp"
-#include "../../Pokemon/Pokemons/Charmander.hpp"
-#include "../../Pokemon/Pokemons/Squirtle.hpp"
+#include "../../../include/Character/Player/Player.hpp"
+#include "../../../include/Pokemon/PokemonChoice.hpp"
+#include "../../../include/Pokemon/Pokemons/Pikachu.hpp"
+#include "../../../include/Utility/Utility.hpp"
+#include "../../../include/Pokemon/Pokemons/Bulbasaur.hpp"
+#include "../../../include/Pokemon/Pokemons/Charmander.hpp"
+#include "../../../include/Pokemon/Pokemons/Squirtle.hpp"
 
 namespace N_Character
 {

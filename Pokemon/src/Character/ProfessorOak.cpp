@@ -1,6 +1,6 @@
-#include "ProfessorOak.hpp"
-#include "../Utility//Utility.hpp"
-#include "Player/Player.hpp"
+#include "../../include/Character/ProfessorOak.hpp"
+#include "../../include/Utility//Utility.hpp"
+#include "../../include/Character/Player/Player.hpp"
 #include <iostream>
 
 namespace N_Character
