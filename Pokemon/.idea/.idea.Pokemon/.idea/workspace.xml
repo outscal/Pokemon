@@ -7,33 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76848a35-e7a8-4068-95a7-3f62e568fd20" name="Changes" comment="added project files">
+    <list default="true" id="76848a35-e7a8-4068-95a7-3f62e568fd20" name="Changes" comment="implemented pointers in the game">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pokemon/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battle/BattleManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Battle/BattleManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battle/BattleManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Battle/BattleManager.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battle/BattleState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Battle/BattleState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battle/WildEncounterManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Battle/WildEncounterManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battle/WildEncounterManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Battle/WildEncounterManager.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Character/Player/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Character/Player/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Character/Player/Player.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Character/Player/Player.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Character/ProfessorOak.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Character/ProfessorOak.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Character/ProfessorOak.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Character/ProfessorOak.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/Game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Game.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Grass.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Grass.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemon.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemon.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Caterpie.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Caterpie.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Caterpie.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Caterpie.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Charmander.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Charmander.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Charmander.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Charmander.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Pidgey.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Pidgey.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Pidgey.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Pidgey.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Pikachu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Pikachu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Pikachu.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Pikachu.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Zubat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Zubat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon/Pokemons/Zubat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon/Pokemons/Zubat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +37,9 @@
     &quot;accountId&quot;: &quot;89f7c2c3-3da3-455e-95dc-ff6aa1f75841&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://M:/Cpp_Projects/Pokemon/Pokemon/Battle/BattleManager.cpp" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -132,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725695804824</updated>
       <workItem from="1725695806886" duration="65000" />
-      <workItem from="1725695877990" duration="3544000" />
+      <workItem from="1725695877990" duration="7855000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -166,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725696114422</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented pointers in the game">
+      <option name="closed" value="true" />
+      <created>1725700062427</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725700062427</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +164,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init commit" />
     <MESSAGE value="added project files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added project files" />
+    <MESSAGE value="implemented pointers in the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented pointers in the game" />
   </component>
 </project>

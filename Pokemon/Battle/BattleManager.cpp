@@ -20,12 +20,12 @@ namespace N_Battle
   }
 
   void BattleManager::battle() {
-    while (battleState.battleOngoing) {
-      if (battleState.playerTurn) {
+    while (battleState.battleOngoing)
+    {
+      if (battleState.playerTurn)
         battleState.playerPokemon->attack(battleState.wildPokemon);
-      } else {
+      else
         battleState.wildPokemon->attack(battleState.playerPokemon);
-      }
 
       updateBattleState();
       battleState.playerTurn = !battleState.playerTurn;
