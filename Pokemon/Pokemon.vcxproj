@@ -178,6 +178,7 @@
     <ClInclude Include="Character\ProfessorOak.hpp" />
     <ClInclude Include="Main\Game.hpp" />
     <ClInclude Include="Pokemon\Grass.hpp" />
+    <ClInclude Include="Pokemon\Move.hpp" />
     <ClInclude Include="Pokemon\Pokemon.hpp" />
     <ClInclude Include="Pokemon\PokemonChoice.hpp" />
     <ClInclude Include="Pokemon\Pokemons\Bulbasaur.hpp" />
