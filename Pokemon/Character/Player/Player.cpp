@@ -4,6 +4,9 @@
 #include "../../Pokemon/Pokemons/Pikachu.hpp"
 #include "../../Utility/Utility.hpp"
 #include "iostream"
+#include "../../Pokemon/Pokemons/Bulbasaur.hpp"
+#include "../../Pokemon/Pokemons/Charmander.hpp"
+#include "../../Pokemon/Pokemons/Squirtle.hpp"
 
 namespace N_Character
 {
@@ -15,24 +18,22 @@ namespace N_Character
 
     Player::Player() {
       name = "Trainer";
-      chosenPokemon = new Pokemon(); // Using the default Pokemon constructor
     }
 
-    Player::Player(std::string p_name, Pokemon* p_chosenPokemon) {
+    Player::Player(std::string p_name) {
       name = p_name;
-      chosenPokemon = p_chosenPokemon;
     }
 
     void Player::choosePokemon(int choice) {
       switch ((PokemonChoice)choice) {
       case PokemonChoice::CHARMANDER:
-        chosenPokemon = new Pokemon("Charmander", PokemonType::FIRE, 100, 10);
+        chosenPokemon = new Charmander();
         break;
       case PokemonChoice::BULBASAUR:
-        chosenPokemon = new Pokemon("Bulbasaur", PokemonType::GRASS, 100, 8);
+        chosenPokemon = new Bulbasaur();
         break;
       case PokemonChoice::SQUIRTLE:
-        chosenPokemon = new Pokemon("Squirtle", PokemonType::WATER, 100, 9);
+        chosenPokemon = new Squirtle();
         break;
       default:
         chosenPokemon = new Pikachu();

@@ -15,8 +15,7 @@ namespace N_Pokemon {
   }
   
   // Parameterized constructor
-  Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health,
-                   int p_attackPower) {
+  Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health, int p_attackPower) {
     name = p_name;
     type = p_type;
     maxHealth = p_health;

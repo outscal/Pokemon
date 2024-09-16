@@ -161,10 +161,12 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Main\Game.cpp" />
     <ClCompile Include="Pokemon\Pokemon.cpp" />
+    <ClCompile Include="Pokemon\Pokemons\Bulbasaur.cpp" />
     <ClCompile Include="Pokemon\Pokemons\Caterpie.cpp" />
     <ClCompile Include="Pokemon\Pokemons\Charmander.cpp" />
     <ClCompile Include="Pokemon\Pokemons\Pidgey.cpp" />
     <ClCompile Include="Pokemon\Pokemons\Pikachu.cpp" />
+    <ClCompile Include="Pokemon\Pokemons\Squirtle.cpp" />
     <ClCompile Include="Pokemon\Pokemons\Zubat.cpp" />
     <ClCompile Include="Utility\Utility.cpp" />
   </ItemGroup>
@@ -178,10 +180,12 @@
     <ClInclude Include="Pokemon\Grass.hpp" />
     <ClInclude Include="Pokemon\Pokemon.hpp" />
     <ClInclude Include="Pokemon\PokemonChoice.hpp" />
+    <ClInclude Include="Pokemon\Pokemons\Bulbasaur.hpp" />
     <ClInclude Include="Pokemon\Pokemons\Caterpie.hpp" />
     <ClInclude Include="Pokemon\Pokemons\Charmander.hpp" />
     <ClInclude Include="Pokemon\Pokemons\Pidgey.hpp" />
     <ClInclude Include="Pokemon\Pokemons\Pikachu.hpp" />
+    <ClInclude Include="Pokemon\Pokemons\Squirtle.hpp" />
     <ClInclude Include="Pokemon\Pokemons\Zubat.hpp" />
     <ClInclude Include="Pokemon\PokemonType.hpp" />
     <ClInclude Include="Utility\Utility.hpp" />

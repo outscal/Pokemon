@@ -16,6 +16,8 @@ namespace N_Battle
     battleState.battleOngoing = true;
 
     cout << "A wild " << wildPokemon->name << " appeared!\n";
+    Utility::waitForEnter();
+    
     battle();
   }
 
