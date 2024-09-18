@@ -11,8 +11,9 @@ namespace N_Battle
     class BattleManager {
     public:
         void startBattle(Player* player, N_Pokemon::Pokemon* wildPokemon);
+        static void stopBattle();
     private:
-        BattleState battleState;  
+        static BattleState battleState;  
 
         void battle();
         void handleBattleOutcome();

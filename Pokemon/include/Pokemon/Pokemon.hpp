@@ -23,12 +23,13 @@ namespace N_Pokemon {
     
         bool isFainted() const;
         void heal();
-        virtual void attack(Pokemon* target) = 0;
+        virtual void attack(Move selectedMove, Pokemon* target);
         void takeDamage(int damage);
+        void selectAndUseMove(Pokemon* target);
+        void reduceAttackPower(int reduced_damage);
 
     protected:
         // Base implementation for selecting and using a move
-        void selectAndUseMove(Pokemon* target); 
         void printAvailableMoves();
         int selectMove();
         void useMove(Move selectedMove, Pokemon* target);

@@ -9,6 +9,8 @@ namespace N_Battle
   using namespace N_Utility;
   using namespace N_Pokemon;
 
+  BattleState BattleManager::battleState;
+  
   void BattleManager::startBattle(Player* player, N_Pokemon::Pokemon* wildPokemon) {
     battleState.playerPokemon = player->chosenPokemon;
     battleState.wildPokemon = wildPokemon;
@@ -21,13 +23,15 @@ namespace N_Battle
     battle();
   }
 
+  void BattleManager::stopBattle() { battleState.battleOngoing = false; }
+
   void BattleManager::battle() {
     while (battleState.battleOngoing)
     {
       if (battleState.playerTurn)
-        battleState.playerPokemon->attack(battleState.wildPokemon);
+        battleState.playerPokemon->selectAndUseMove(battleState.wildPokemon);
       else
-        battleState.wildPokemon->attack(battleState.playerPokemon);
+        battleState.wildPokemon->selectAndUseMove(battleState.playerPokemon);
 
       updateBattleState();
       battleState.playerTurn = !battleState.playerTurn;

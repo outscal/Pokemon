@@ -47,9 +47,17 @@ namespace N_Pokemon {
     int choice = selectMove();
     Move selectedMove = moves[choice-1];
     
-
     useMove(selectedMove, target);
-    
+  }
+
+  void Pokemon::reduceAttackPower(int reduced_damage)
+  {
+    for(int i=0; i<moves.size(); i++)
+    {
+      moves[i].power -= reduced_damage;
+      if(moves[i].power < 0)
+        moves[i].power = 0;
+    }
   }
 
   void Pokemon::printAvailableMoves()
@@ -80,8 +88,8 @@ namespace N_Pokemon {
 
   void Pokemon::useMove(Move selectedMove, Pokemon* target)
   {
-    target->takeDamage(selectedMove.power);
     cout << name << " used " << selectedMove.name << "!\n";
+    attack(selectedMove, target);
     N_Utility::Utility::waitForEnter();
 
     cout << "...\n"; 
@@ -93,10 +101,11 @@ namespace N_Pokemon {
       cout << target->name << " has " << target->health << " HP left.\n";
   }
 
+  void Pokemon::attack(Move selectedMove, Pokemon* target) { target->takeDamage(selectedMove.power); }
+
   // Check if the Pokemon has fainted
   bool Pokemon::isFainted() const { return health <= 0; }
   
   // Restore health to full
   void Pokemon::heal() { health = maxHealth; }
-  
 } // namespace N_Pokemon

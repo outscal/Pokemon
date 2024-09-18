@@ -3,6 +3,9 @@
 #include "../../../include/Pokemon/Move.hpp"
 #include <iostream>
 
+#include "../../../include/Battle/BattleManager.hpp"
+#include "../../../include/Utility/Utility.hpp"
+
 namespace N_Pokemon {
   namespace N_Pokemons {
     using namespace std;
@@ -13,10 +16,20 @@ namespace N_Pokemon {
             Move("TACKLE", 10)
         }) {}
     
-    void Pidgey::attack(Pokemon* target)
+    void Pidgey::attack(Move selectedMove, Pokemon* target)
     {
-      selectAndUseMove(target);
-    }
+        Pokemon::attack(selectedMove, target);
 
+        if(selectedMove.name == "GUST")
+        {
+            // 20% chance to blow the opponent away
+            if (rand() % 100 < 20)
+            { 
+                std::cout <<"... and blew the opponent away!\n";
+                N_Battle::BattleManager::stopBattle();
+                N_Utility::Utility::waitForEnter();
+            }
+        }
+    }
   }
 }
