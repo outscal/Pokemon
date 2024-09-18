@@ -90,6 +90,7 @@ namespace N_Pokemon {
   {
     cout << name << " used " << selectedMove.name << "!\n";
     attack(selectedMove, target);
+    
     N_Utility::Utility::waitForEnter();
 
     cout << "...\n"; 

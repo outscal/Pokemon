@@ -25,7 +25,7 @@ namespace N_Pokemon {
 
                 // Split damage across hits
                 for (int i = 0; i < hits; ++i) {
-                    target->takeDamage(selectedMove.power); 
+                    Pokemon::attack(selectedMove, target);
                 }
                 
                 std::cout << "... and hit " << hits << " times!\\n";
