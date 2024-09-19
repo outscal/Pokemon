@@ -17,6 +17,7 @@ namespace N_Pokemon {
         
         void Pikachu::attack(Move selectedMove, Pokemon* target)
         {
+            
             if(selectedMove.name == "THUNDER BOLT")
             {
                 // 80% chance to hit
@@ -30,7 +31,12 @@ namespace N_Pokemon {
             }
             else
                 Pokemon::attack(selectedMove, target);
-            
+
+            if(selectedMove.name == "THUNDER SHOCK")
+            {
+                if(target->canApplyEffect())
+                    target->applyEffect(StatusEffectType::PARALYZED);
+            }
         }
   }
 }
