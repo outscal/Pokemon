@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../../include/Pokemon/Pokemon.hpp"
 #include "../../include/Pokemon/PokemonType.hpp"
+#include "../../include/Pokemon/StatusEffects/ParalyzedEffect.hpp"
 #include "../../include/Utility/Utility.hpp"
 using namespace std;
 
@@ -21,6 +22,7 @@ namespace N_Pokemon {
     maxHealth = p_health;
     health = p_health;
     moves = p_moves;
+    appliedEffect = nullptr;
   }
   
   // Copy constructor
@@ -59,6 +61,31 @@ namespace N_Pokemon {
         moves[i].power = 0;
     }
   }
+
+  bool Pokemon::canAttack()
+  {
+    if(appliedEffect == nullptr)
+      return true;
+    else
+      return appliedEffect->turnEndEffect(this);
+  }
+
+  bool Pokemon::canApplyEffect() { return appliedEffect == nullptr; }
+
+  void Pokemon::applyEffect(StatusEffectType effectToApply)
+  {
+    switch (effectToApply)
+    {
+    case StatusEffectType::PARALYZED:
+      appliedEffect = new ParalyzedEffect();
+      appliedEffect->applyEffect(this);
+      break;
+    default:
+      appliedEffect = nullptr;
+    }
+  }
+
+  void Pokemon::clearEffect() { appliedEffect = nullptr; }
 
   void Pokemon::printAvailableMoves()
   {
