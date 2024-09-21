@@ -1,12 +1,11 @@
-#include "Game.hpp"
-#include "../Battle/BattleManager.hpp"
-#include "../Battle/WildEncounterManager.hpp"
-#include "../Character/Player/Player.hpp"
-#include "../Pokemon/PokemonType.hpp"
-#include "../Pokemon/Pokemons/Caterpie.hpp"
-#include "../Pokemon/Pokemons/Pidgey.hpp"
-#include "../Pokemon/Pokemons/Zubat.hpp"
-#include "../Utility/Utility.hpp"
+#include "../../include/Main/Game.hpp"
+#include "../../include/Battle/BattleManager.hpp"
+#include "../../include/Battle/WildEncounterManager.hpp"
+#include "../../include/Character/Player/Player.hpp"
+#include "../../include/Pokemon/Pokemons/Caterpie.hpp"
+#include "../../include/Pokemon/Pokemons/Pidgey.hpp"
+#include "../../include/Pokemon/Pokemons/Zubat.hpp"
+#include "../../include/Utility/Utility.hpp"
 #include <iostream>
 
 namespace N_Main
@@ -23,7 +22,7 @@ namespace N_Main
     forestGrass = {"Forest", {Pidgey(), Caterpie(), Zubat()}, 70};
   }
 
-  void Game::gameLoop(N_Character::N_Player::Player &player) {
+  void Game::gameLoop(Player &player) {
 
     int choice;
     bool keepPlaying = true;
@@ -33,7 +32,7 @@ namespace N_Main
 
     while (keepPlaying) {
       // Clear console before showing options
-      N_Utility::Utility::clearConsole();
+      Utility::clearConsole();
 
       // Display options to the player
       cout << "\nWhat would you like to do next, " << player.name << "?\n";
