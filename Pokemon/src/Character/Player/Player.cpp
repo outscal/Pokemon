@@ -1,8 +1,8 @@
-#include "Player.hpp"
-#include "../../Pokemon/PokemonChoice.hpp"
-#include "../../Pokemon/PokemonType.hpp"
-#include "../../Pokemon/Pokemons/Pikachu.hpp"
-#include "../../Utility/Utility.hpp"
+#include "../../../include/Character/Player/Player.hpp"
+#include "../../../include/Pokemon/PokemonChoice.hpp"
+#include "../../../include/Pokemon/PokemonType.hpp"
+#include "../../../include/Pokemon/Pokemons/Pikachu.hpp"
+#include "../../../include/Utility/Utility.hpp"
 #include "iostream"
 
 namespace N_Character

@@ -1,5 +1,5 @@
-#include "Pikachu.hpp"
-#include "../PokemonType.hpp"
+#include "../../../include/Pokemon/Pokemons/Pikachu.hpp"
+#include "../../../include/Pokemon/PokemonType.hpp"
 #include <iostream>
 
 namespace N_Pokemon {
