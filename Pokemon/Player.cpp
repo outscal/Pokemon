@@ -1,8 +1,8 @@
 // Player.cpp
-#include "Player.h"
-// #include "Pokemon.h"
-#include "PokemonChoice.h"
-#include "Utility.h"
+#include "Player.hpp"
+// #include "PokemonType.h"
+#include "PokemonChoice.hpp"
+#include "Utility.hpp"
 #include "iostream"
 
 Player::Player() {

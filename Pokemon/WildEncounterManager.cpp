@@ -1,6 +1,6 @@
-#include "Grass.h"
-#include "WildEncounterManager.h"
-#include "Pokemon.h"
+#include "Grass.hpp"
+#include "WildEncounterManager.hpp"
+#include "Pokemon.hpp"
 #include <cstdlib> // For rand()
 #include <ctime>   // For time()
 

@@ -1,7 +1,7 @@
-#include "Player.h"
-#include "Game.h"
-#include "Utility.h"
-#include "WildEncounterManager.h"
+#include "Player.hpp"
+#include "Game.hpp"
+#include "Utility.hpp"
+#include "WildEncounterManager.hpp"
 
 #include <iostream>
 using namespace std;

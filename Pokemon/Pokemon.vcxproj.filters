@@ -38,31 +38,31 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Player.h">
+    <ClInclude Include="Player.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pokemon.h">
+    <ClInclude Include="Pokemon.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PokemonChoice.h">
+    <ClInclude Include="PokemonChoice.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PokemonType.h">
+    <ClInclude Include="PokemonType.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utility.h">
+    <ClInclude Include="Utility.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="Game.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Grass.h">
+    <ClInclude Include="Grass.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ProfessorOak.h">
+    <ClInclude Include="ProfessorOak.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="WildEncounterManager.h">
+    <ClInclude Include="WildEncounterManager.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
