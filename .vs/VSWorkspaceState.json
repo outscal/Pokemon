@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Pokemon",
+    "\\Pokemon\\include\\Battle",
+    "\\Pokemon\\include\\Character",
+    "\\Pokemon\\include\\Character\\Player",
+    "\\Pokemon\\src",
+    "\\Pokemon\\src\\Battle",
+    "\\Pokemon\\src\\Character",
+    "\\Pokemon\\src\\Character\\Player",
+    "\\Pokemon\\src\\Utility"
+  ],
+  "SelectedNode": "\\Pokemon\\main.cpp",
+  "PreviewInSolutionExplorer": false
+}

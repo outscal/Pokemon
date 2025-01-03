@@ -154,37 +154,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Battle\BattleManager.cpp" />
-    <ClCompile Include="Battle\WildEncounterManager.cpp" />
-    <ClCompile Include="Character\Player\Player.cpp" />
-    <ClCompile Include="Character\ProfessorOak.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Main\Game.cpp" />
-    <ClCompile Include="Pokemon\Pokemon.cpp" />
-    <ClCompile Include="Pokemon\Pokemons\Caterpie.cpp" />
-    <ClCompile Include="Pokemon\Pokemons\Charmander.cpp" />
-    <ClCompile Include="Pokemon\Pokemons\Pidgey.cpp" />
-    <ClCompile Include="Pokemon\Pokemons\Pikachu.cpp" />
-    <ClCompile Include="Pokemon\Pokemons\Zubat.cpp" />
-    <ClCompile Include="Utility\Utility.cpp" />
+    <ClCompile Include="src\Battle\BattleManager.cpp" />
+    <ClCompile Include="src\Battle\WildEncounterManager.cpp" />
+    <ClCompile Include="src\Character\Player\Player.cpp" />
+    <ClCompile Include="src\Character\ProfessorOak.cpp" />
+    <ClCompile Include="src\Main\Game.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemon.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemons\Caterpie.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemons\Charmander.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemons\Pidgey.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemons\Pikachu.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemons\Zubat.cpp" />
+    <ClCompile Include="src\Utility\Utility.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Battle\BattleManager.hpp" />
-    <ClInclude Include="Battle\BattleState.hpp" />
-    <ClInclude Include="Battle\WildEncounterManager.hpp" />
-    <ClInclude Include="Character\Player\Player.hpp" />
-    <ClInclude Include="Character\ProfessorOak.hpp" />
+    <ClInclude Include="include\Battle\BattleManager.hpp" />
+    <ClInclude Include="include\Battle\BattleState.hpp" />
+    <ClInclude Include="include\Battle\WildEncounterManager.hpp" />
+    <ClInclude Include="include\Character\Player\Player.hpp" />
+    <ClInclude Include="include\Character\ProfessorOak.hpp" />
+    <ClInclude Include="include\Main\Game.hpp" />
+    <ClInclude Include="include\Pokemon\Grass.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemon.hpp" />
+    <ClInclude Include="include\Pokemon\PokemonChoice.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Caterpie.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Charmander.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Pidgey.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Pikachu.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Zubat.hpp" />
+    <ClInclude Include="include\Pokemon\PokemonType.hpp" />
+    <ClInclude Include="include\Utility\Utility.hpp" />
     <ClInclude Include="Main\Game.hpp" />
-    <ClInclude Include="Pokemon\Grass.hpp" />
-    <ClInclude Include="Pokemon\Pokemon.hpp" />
-    <ClInclude Include="Pokemon\PokemonChoice.hpp" />
-    <ClInclude Include="Pokemon\Pokemons\Caterpie.hpp" />
-    <ClInclude Include="Pokemon\Pokemons\Charmander.hpp" />
-    <ClInclude Include="Pokemon\Pokemons\Pidgey.hpp" />
-    <ClInclude Include="Pokemon\Pokemons\Pikachu.hpp" />
-    <ClInclude Include="Pokemon\Pokemons\Zubat.hpp" />
-    <ClInclude Include="Pokemon\PokemonType.hpp" />
-    <ClInclude Include="Utility\Utility.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
