@@ -1,7 +1,7 @@
-#include "Player.h"
-#include "PokemonChoice.h"
-#include "PokemonType.h"
-#include "Utility.h"
+#include "Player.hpp"
+#include "PokemonChoice.hpp"
+#include "PokemonType.hpp"
+#include "Utility.hpp"
 #include <iostream>
 #include <limits> // Include this header to use std::numeric_limits
 #include <string>
