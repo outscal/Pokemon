@@ -2,23 +2,15 @@
 #include <string>
 using namespace std;
 
-enum class PokemonChoice {
-    Charmander,
-    Bulbasaur,
-    Squirtle,
-    Fire,
-    Eletric,
-    Water,
-    Earth,
-    Normal,
-    InvalidChoice
-};
+enum class PokemonChoice { Charmander, Bulbasaur, Squirtle };
+
+enum class PokemonType { Fire, Electric, Water, Earth, Normal };
 
 int main() {
 
     //variables to store player name and chosen pokemon
     string player_name;
-    PokemonChoice chosen_pokemon = PokemonChoice::InvalidChoice;
+    PokemonChoice chosen_pokemon = PokemonChoice::Charmander;
 
     //introductionof professor oak
     cout << "Professor Oak: Hello there! Welcome to the world of Pokemon!" << endl;
