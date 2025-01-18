@@ -2,7 +2,7 @@
 #include <string>
 using std::string;
 
-enum PokemonChoice {
+enum class PokemonChoice {
     Charmander,
     Bulbasaur,
     Squirtle,
@@ -24,7 +24,7 @@ int main() {
 
     PokemonChoice firstPokemon = PokemonChoice::InvalidChoice;
     string choice;
-    while (firstPokemon == InvalidChoice)
+    while (firstPokemon == PokemonChoice::InvalidChoice)
     {
         std::cin >> choice;
 
