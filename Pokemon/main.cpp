@@ -9,6 +9,7 @@ enum class PokemonSpecies {
     Charmander,
     Bulbasaur,
     Squirtle,
+    Pikachu,
     InvalidChoice
 };
 enum class PokemonType {
@@ -44,6 +45,10 @@ public:
     Pokemon() {
         constructNameDictionary();
         constructTypeDictionary();
+        species = PokemonSpecies::Pikachu;
+        name = pokemon_names[species];
+        health = 15;
+        type = pokemon_types[species];
     };
     Pokemon(PokemonSpecies p_species, int p_health) {
         constructNameDictionary();
@@ -52,6 +57,15 @@ public:
         type = pokemon_types[species];
         health = p_health;
         name = pokemon_names[p_species];
+    };
+    Pokemon(const Pokemon& other)
+    {
+        name = other.name;
+        type = other.type;
+        health = other.health;
+    }
+    ~Pokemon() {
+        cout << name << " has been released.\n";
     }
     void attack() { cout << name << "attacks with a powerful move!\n"; }
     void constructNameDictionary() {
@@ -60,13 +74,15 @@ public:
             pokemon_names = { {PokemonSpecies::Charmander, "Charmander"},
                               {PokemonSpecies::Bulbasaur, "Bulbasaur"},
                               {PokemonSpecies::Squirtle, "Squirtle"},
+                              {PokemonSpecies::Pikachu, "Pikachu"}
                               };
         }
     }
     void constructTypeDictionary() {
         pokemon_types = { {PokemonSpecies::Charmander, PokemonType::Fire},
                               {PokemonSpecies::Bulbasaur, PokemonType::Grass},
-                              {PokemonSpecies::Squirtle, PokemonType::Water}, };
+                              {PokemonSpecies::Squirtle, PokemonType::Water},
+                              {PokemonSpecies::Pikachu, PokemonType::Electric } };
         
     }
 };
@@ -74,7 +90,15 @@ class Player {
 public:
     string p_name;
     Pokemon p_chosenPokemon;
-    Player() {};
+    Player() {
+        p_name = "Trainer";
+        p_chosenPokemon = Pokemon();
+        cout << "A new player named " << p_name << " has been created!\n";
+    };
+    Player() 
+    {
+
+    }
     void choosePokemon()
     {
         PokemonSpecies firstPokemon = PokemonSpecies::InvalidChoice;
@@ -141,6 +165,17 @@ int main() {
     ProfessorOak professor("Professor Oak", player_object);
     professor.greetPlayer();
     professor.offerPokemonChoices();
+
+    Pokemon default_pokemon = Pokemon();
+    Pokemon charmander = Pokemon(PokemonSpecies::Charmander, 100);
+    Pokemon bulbasaur = Pokemon(PokemonSpecies::Bulbasaur, 100);
+    Pokemon bulbasaurCopy = bulbasaur;
+    bulbasaurCopy.health = 80;
+
+    cout << "This is the bulbasaur copy's health: " << bulbasaurCopy.health << endl;
+    cout << "And this is the original's health" << bulbasaur.health;
+
+
     return 0;
 
 }
