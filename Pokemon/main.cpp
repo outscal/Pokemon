@@ -5,6 +5,18 @@ using std::string;
 using std::unordered_map;
 using namespace std;
 
+void WaitForEnter() {
+    cin.get();
+}
+void ClearConsole()
+{
+    #ifdef _WIN32
+        system("cls");
+    #else
+        (void)system("clear");
+    #endif
+}
+
 enum class PokemonSpecies {
     Charmander,
     Bulbasaur,
@@ -146,15 +158,55 @@ public:
 
     void greetPlayer() {
         std::cout << "Welcome to the wonderous world of Pokemon, young trainer." << "\n" << "By what name should I address you?" << "\n" << std::endl;
+        WaitForEnter();
         getline(cin, player.p_name);
         std::cout << "Congratulations " << player.p_name << ", now you are almost ready for adventure!\n" << std::endl;
+
     }
 
     void offerPokemonChoices() {
         std::cout << "But one last thing, what every youth in Kanto dreams of, you must choose your partner pokemon!" << "\n" << std::endl;
+        WaitForEnter();
         std::cout << "Will it be Charmander, Squirtle or Bulbasaur?" << "\n\n" << std::endl;
         std::cout << "Enter the name of the pokemon of your choice." << "\n\n" << std::endl;
         player.choosePokemon();
+        WaitForEnter();
+        ClearConsole();
+        
+    }
+    void explainMainQuest(Player player) {
+        cout << "Professor Oak: Oak-ay" << player.p_name << "!, I am about to explain you about your upcoming grand adventure.\n";
+        WaitForEnter();
+        cout << "Professor Oak: You see, becoming a Pokémon Master is no easy feat. It takes courage, wisdom, and a bit of luck!\n";
+        WaitForEnter();
+        cout << "Professor Oak: Your mission, should you choose to accept it—and trust me, you really don’t have a choice—is to collect all the Pokémon Badges and conquer the Pokémon League.\n";
+        WaitForEnter();
+
+        cout << "\n" << player.p_name << ": Wait... that sounds a lot like every other Pokémon game out there...\n";
+        WaitForEnter();
+        cout << "Professor Oak: Shhh! Don't break the fourth wall, " << player.p_name << "! This is serious business!\n";
+        WaitForEnter();
+
+        cout << "\nProfessor Oak: To achieve this, you’ll need to battle wild Pokémon, challenge gym leaders, and of course, keep your Pokémon healthy at the PokeCenter.\n";
+        WaitForEnter();
+        cout << "Professor Oak: Along the way, you'll capture new Pokémon to strengthen your team. Just remember—there’s a limit to how many Pokémon you can carry, so choose wisely!\n";
+        WaitForEnter();
+
+        cout << "\n" << player.p_name << ": Sounds like a walk in the park... right?\n";
+        WaitForEnter();
+        cout << "Professor Oak: Hah! That’s what they all say! But beware, young Trainer, the path to victory is fraught with challenges. And if you lose a battle... well, let’s just say you'll be starting from square one.\n";
+
+        WaitForEnter();
+        cout << "\nProfessor Oak: So, what do you say? Are you ready to become the next Pokémon Champion?\n";
+        WaitForEnter();
+        cout << "\n" << player.p_name << ": Ready as I’ll ever be, Professor!\n";
+
+        WaitForEnter();
+        cout << "\nProfessor Oak: That’s the spirit! Now, your journey begins...\n";
+        WaitForEnter();
+        cout << "ProfesWaitForEnter();sor Oak: But first... let's just pretend I didn't forget to set up the actual game loop... Ahem, onwards!\n";
+        WaitForEnter();
+        ClearConsole();
     }
 };
 unordered_map<PokemonSpecies, string>  Pokemon::pokemon_names;
@@ -166,15 +218,7 @@ int main() {
     professor.greetPlayer();
     professor.offerPokemonChoices();
 
-    Pokemon default_pokemon = Pokemon();
-    Pokemon charmander = Pokemon(PokemonSpecies::Charmander, 100);
-    Pokemon bulbasaur = Pokemon(PokemonSpecies::Bulbasaur, 100);
-    Pokemon bulbasaurCopy = bulbasaur;
-    bulbasaurCopy.health = 80;
-
-    cout << "This is the bulbasaur copy's health: " << bulbasaurCopy.health << endl;
-    cout << "And this is the original's health" << bulbasaur.health;
-
+    
 
     return 0;
 
