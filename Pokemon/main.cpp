@@ -209,6 +209,46 @@ public:
         ClearConsole();
     }
 };
+
+void GameLoop(Player &player)
+{
+    bool keepPlaying = true;
+    int choice;
+
+    while (keepPlaying)
+    {
+        cout << "\nWhat would you like to do next, " << player.p_name << "?\n";
+        cout << "1. Battle Wild Pokémon\n";
+        cout << "2. Visit PokeCenter\n";
+        cout << "3. Challenge Gyms\n";
+        cout << "4. Enter Pokémon League\n";
+        cout << "5. Quit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+    }
+
+    switch (choice) {
+    case 1:
+        cout << "You look around... but all the wild Pokemon are on vacation. Maybe try again later?\\n" << endl;
+        break;
+    
+    case 2:
+        cout << "You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokemon will have to tough it out for now!\\n" << endl;
+        break;
+    
+     case 3:
+         cout <<"You march up to the Gym, but it's closed for renovations. Seems like even Gym Leaders need a break!\\n" << endl;
+         break;
+     case 4:
+         cout << "You boldly step towards the Pokemon League... but the gatekeeper laughs and says, 'Maybe next time, champ!'\\n" << endl;
+         break;
+     case 5:
+         cout << "You try to quit, but Professor Oak's voice echoes: 'There's no quitting in Pokemon training!\\n" << endl;
+         break;
+    }
+}
+
+
 unordered_map<PokemonSpecies, string>  Pokemon::pokemon_names;
 unordered_map<PokemonSpecies, PokemonType>  Pokemon::pokemon_types;
 int main() {
