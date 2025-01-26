@@ -162,6 +162,9 @@
     <Content Include=".idea\.idea.Pokemon\.idea\workspace.xml" />
     <Content Include="Pokemon.vcxproj.filters" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestHeader.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

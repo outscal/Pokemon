@@ -107,10 +107,7 @@ public:
         p_chosenPokemon = Pokemon();
         cout << "A new player named " << p_name << " has been created!\n";
     };
-    Player() 
-    {
-
-    }
+    
     void choosePokemon()
     {
         PokemonSpecies firstPokemon = PokemonSpecies::InvalidChoice;
@@ -257,9 +254,10 @@ int main() {
     ProfessorOak professor("Professor Oak", player_object);
     professor.greetPlayer();
     professor.offerPokemonChoices();
+    professor.explainMainQuest(player_object);
 
     
 
     return 0;
 
-}
+#include "TestHeader.h"
