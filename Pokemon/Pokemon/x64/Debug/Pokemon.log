@@ -1,2 +1,7 @@
 ﻿  main.cpp
+  Player.cpp
+  Pokemon.cpp
+  ProfessorOak.cpp
+  Utility.cpp
+  Generating Code...
   Pokemon.vcxproj -> C:\Users\egeyi\Outscal\Pokemon\Pokemon\x64\Debug\Pokemon.exe
