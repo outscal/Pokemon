@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
+#include "PokemonTypes.h"
+#include "PokemonSpecies.h"
 using std::string;
 using std::unordered_map;
 using namespace std;
@@ -17,33 +19,8 @@ void ClearConsole()
     #endif
 }
 
-enum class PokemonSpecies {
-    Charmander,
-    Bulbasaur,
-    Squirtle,
-    Pikachu,
-    InvalidChoice
-};
-enum class PokemonType {
-    Fire,
-    Water,
-    Grass,
-    Electric,
-    Ground,
-    Dark,
-    Flying,
-    Ghost,
-    Psychic,
-    Fighting,
-    Steel,
-    Dragon,
-    Ice,
-    Fairy,
-    Normal,
-    Rock,
-    Poison,
-    Bug,
-};
+
+
 
 class Pokemon {
 public:
@@ -249,15 +226,15 @@ void GameLoop(Player &player)
 unordered_map<PokemonSpecies, string>  Pokemon::pokemon_names;
 unordered_map<PokemonSpecies, PokemonType>  Pokemon::pokemon_types;
 int main() {
-    
+
     Player player_object;
     ProfessorOak professor("Professor Oak", player_object);
     professor.greetPlayer();
     professor.offerPokemonChoices();
     professor.explainMainQuest(player_object);
 
-    
+
 
     return 0;
 
-#include "TestHeader.h"
+}

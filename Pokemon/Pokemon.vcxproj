@@ -163,7 +163,8 @@
     <Content Include="Pokemon.vcxproj.filters" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TestHeader.h" />
+    <ClInclude Include="PokemonSpecies.h" />
+    <ClInclude Include="PokemonTypes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

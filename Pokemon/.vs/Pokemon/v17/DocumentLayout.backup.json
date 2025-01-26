@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\PokemonSpecies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:PokemonSpecies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\TestHeader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:TestHeader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\PokemonTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:PokemonTypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PokemonSpecies.h",
+              "DocumentMoniker": "C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\PokemonSpecies.h",
+              "RelativeDocumentMoniker": "PokemonSpecies.h",
+              "ToolTip": "C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\PokemonSpecies.h",
+              "RelativeToolTip": "PokemonSpecies.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-26T19:08:08.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TestHeader.h",
-              "DocumentMoniker": "C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\TestHeader.h",
-              "RelativeDocumentMoniker": "TestHeader.h",
-              "ToolTip": "C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\TestHeader.h",
-              "RelativeToolTip": "TestHeader.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Title": "PokemonTypes.h",
+              "DocumentMoniker": "C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\PokemonTypes.h",
+              "RelativeDocumentMoniker": "PokemonTypes.h",
+              "ToolTip": "C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\PokemonTypes.h",
+              "RelativeToolTip": "PokemonTypes.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-26T18:57:02.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\egeyi\\Outscal\\Pokemon\\Pokemon\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAANkAAAAAAAAAAADgvwABAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAiwO8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-17T03:41:08.009Z",
               "EditorCaption": ""

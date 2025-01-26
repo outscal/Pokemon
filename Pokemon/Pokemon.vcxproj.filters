@@ -20,7 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TestHeader.h">
+    <ClInclude Include="PokemonTypes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PokemonSpecies.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
