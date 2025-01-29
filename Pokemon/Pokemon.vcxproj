@@ -160,6 +160,7 @@
     <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="ProfessorOak.cpp" />
     <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="WildEncounterManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
@@ -177,6 +178,8 @@
     <ClInclude Include="PokemonTypes.h" />
     <ClInclude Include="ProfessorOak.h" />
     <ClInclude Include="Utility.h" />
+    <ClInclude Include="WildEncounterManager.h" />
+    <ClInclude Include="WildPokemon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

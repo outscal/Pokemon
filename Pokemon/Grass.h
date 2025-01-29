@@ -1,4 +1,7 @@
 // grass.h
+
+#ifndef GRASS_H
+#define GRASS_H
 #include<string>
 #include<vector>
 #include "Pokemon.h"
@@ -14,3 +17,5 @@ struct Grass {
     vector<PokemonSpecies> wildPokemonList;  // List of wild Pokémon that live in this grass
     int encounterRate;  // Likelihood of encountering a wild Pokémon, out of 100
 };
+
+#endif 

@@ -1,8 +1,9 @@
 
-#include "Utility.h"
-#include "Player.h"
 #ifndef GAME_H
 #define GAME_H
+#include "Utility.h"
+#include "Player.h"
+
 
 
 class Game {
