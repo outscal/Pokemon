@@ -154,6 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Pokemon.cpp" />
@@ -167,6 +168,9 @@
     <Content Include="Pokemon.vcxproj.filters" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EnvironmentTypes.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Grass.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Pokemon.h" />
     <ClInclude Include="PokemonSpecies.h" />

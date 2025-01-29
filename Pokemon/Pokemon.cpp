@@ -49,7 +49,11 @@ void Pokemon::constructNameDictionary() {
             {PokemonSpecies::Charmander, "Charmander"},
             {PokemonSpecies::Bulbasaur, "Bulbasaur"},
             {PokemonSpecies::Squirtle, "Squirtle"},
-            {PokemonSpecies::Pikachu, "Pikachu"}
+            {PokemonSpecies::Pikachu, "Pikachu"},
+            {PokemonSpecies::Geodude, "Geodude" },
+            {PokemonSpecies::Zubat, "Zubat"},
+            {PokemonSpecies::Caterpie, "Caterpie"},
+            {PokemonSpecies::Goldeen, "Goldeen"}
         };
     }
 }
@@ -61,7 +65,11 @@ void Pokemon::constructTypeDictionary() {
             {PokemonSpecies::Charmander, PokemonType::Fire},
             {PokemonSpecies::Bulbasaur, PokemonType::Grass},
             {PokemonSpecies::Squirtle, PokemonType::Water},
-            {PokemonSpecies::Pikachu, PokemonType::Electric}
+            {PokemonSpecies::Pikachu, PokemonType::Electric},
+            {PokemonSpecies::Geodude, PokemonType::Rock },
+            {PokemonSpecies::Zubat, PokemonType::Poison},
+            {PokemonSpecies::Caterpie, PokemonType::Bug},
+            {PokemonSpecies::Goldeen, PokemonType::Water}
         };
     }
 }

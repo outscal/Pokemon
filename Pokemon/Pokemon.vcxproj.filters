@@ -30,6 +30,9 @@
     <ClCompile Include="ProfessorOak.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PokemonTypes.h">
@@ -48,6 +51,15 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="ProfessorOak.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnvironmentTypes.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

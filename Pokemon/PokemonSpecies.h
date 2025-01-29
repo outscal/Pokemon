@@ -5,5 +5,10 @@ enum class PokemonSpecies {
     Bulbasaur,
     Squirtle,
     Pikachu,
+    Caterpie,
+    Pidgey,
+    Goldeen,
+    Zubat,
+    Geodude,
     InvalidChoice
 };
