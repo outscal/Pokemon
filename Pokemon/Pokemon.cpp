@@ -11,7 +11,8 @@ Pokemon::Pokemon() {
     constructTypeDictionary();
     species = PokemonSpecies::Pikachu;
     name = pokemon_names[species];
-    health = 15;
+    maxHealth = 15;
+    health = maxHealth;
     type = pokemon_types[species];
 }
 
@@ -21,7 +22,8 @@ Pokemon::Pokemon(PokemonSpecies p_species, int p_health) {
     constructTypeDictionary();
     species = p_species;
     type = pokemon_types[species];
-    health = p_health;
+    maxHealth = p_health;
+    health = maxHealth;
     name = pokemon_names[p_species];
 }
 
@@ -29,6 +31,7 @@ Pokemon::Pokemon(PokemonSpecies p_species, int p_health) {
 Pokemon::Pokemon(const Pokemon& other) {
     name = other.name;
     type = other.type;
+    maxHealth = other.maxHealth;
     health = other.health;
 }
 
@@ -38,8 +41,20 @@ Pokemon::~Pokemon() {
 }
 
 // Attack function
-void Pokemon::attack() {
-    std::cout << name << " attacks with a powerful move!\n";
+void Pokemon::attack(Pokemon& opposingPokemon) {
+    int damage = 10; // Fixed damage for simplicity
+    std::cout << name << " attacks " << opposingPokemon.name << " for " << damage << " damage!\\n";
+    opposingPokemon.takeDamage(damage); // Apply damage to the target Pokémon
+}
+void Pokemon::takeDamage(int damage) {
+    health -= damage; // Reduce HP by the damage amount
+    if (health < 0) {
+        health = 0; // Ensure HP doesn't go below 0
+    }
+}
+
+bool Pokemon::isFainted() {
+    return health <= 0;
 }
 
 // Helper function to construct the name dictionary

@@ -36,6 +36,9 @@
     <ClCompile Include="WildEncounterManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BattleManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PokemonTypes.h">
@@ -69,6 +72,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="WildPokemon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleManager.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

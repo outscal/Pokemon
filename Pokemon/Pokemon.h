@@ -18,6 +18,7 @@ public:
     PokemonSpecies species;
     PokemonType type;
     int health;
+    int maxHealth;
     std::string name;
 
     // Constructors and Destructor
@@ -27,9 +28,11 @@ public:
     ~Pokemon();
 
     // Member functions
-    void attack();
+    void attack(Pokemon& opposingPokemon);
     void constructNameDictionary();
     void constructTypeDictionary();
+    void takeDamage(int damage);
+    bool isFainted();
 };
 
 #endif // POKEMON_H
