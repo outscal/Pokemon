@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Grass.h"
 #include "WildEncounterManager.h"
+#include "BattleManager.h"
 
 
 
@@ -9,6 +10,9 @@
 void Game::GameLoop(Player& player) {
     bool keepPlaying = true;
     int choice;
+    BattleManager battleManager;
+
+
 
     Grass caveGrass = {
         EnvironmentTypes::Cave,
@@ -24,6 +28,7 @@ void Game::GameLoop(Player& player) {
 
 
     while (keepPlaying) {
+        Utility::clearConsole();
         std::cout << "\nWhat would you like to do next, " << player.p_name << "?\n";
         std::cout << "1. Battle Wild Pokémon\n";
         std::cout << "2. Visit PokeCenter\n";
@@ -41,8 +46,8 @@ void Game::GameLoop(Player& player) {
             WildEncounterManager encounterManager;
             WildPokemon encounteredPokemon = encounterManager.getRandomPokemonFromGrass(forestGrass);
 
-
-            std::cout << "A wild " << encounteredPokemon.name << " appeared!\n" << std::endl;
+            battleManager.startBattle(player, encounteredPokemon);
+            
             break;
         }
             case 2:
