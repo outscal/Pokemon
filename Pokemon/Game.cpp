@@ -46,7 +46,9 @@ void Game::GameLoop(Player& player) {
             break;
         }
             case 2:
-                std::cout << "You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokémon will have to tough it out for now!\n" << std::endl;
+                cout << "You head to the PokeCenter.\\n";
+                player.p_chosenPokemon.healToFullHealth(); // Heal the player's Pokémon
+                cout << player.p_chosenPokemon.name << "'s health is fully restored!\\n";
                 break;
 
             case 3:

@@ -42,7 +42,7 @@ Pokemon::~Pokemon() {
 
 // Attack function
 void Pokemon::attack(Pokemon& opposingPokemon) {
-    int damage = 10; // Fixed damage for simplicity
+    int damage = attackPower; // Fixed damage for simplicity
     std::cout << name << " attacks " << opposingPokemon.name << " for " << damage << " damage!\\n";
     opposingPokemon.takeDamage(damage); // Apply damage to the target Pokémon
 }
@@ -55,6 +55,10 @@ void Pokemon::takeDamage(int damage) {
 
 bool Pokemon::isFainted() {
     return health <= 0;
+}
+
+void Pokemon::healToFullHealth() {
+    health = maxHealth; // Restore health to full
 }
 
 // Helper function to construct the name dictionary

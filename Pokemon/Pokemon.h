@@ -19,6 +19,7 @@ public:
     PokemonType type;
     int health;
     int maxHealth;
+    int attackPower;
     std::string name;
 
     // Constructors and Destructor
@@ -33,6 +34,7 @@ public:
     void constructTypeDictionary();
     void takeDamage(int damage);
     bool isFainted();
+    void healToFullHealth(); // Method to restore HP to max
 };
 
 #endif // POKEMON_H
