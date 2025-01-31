@@ -3,6 +3,8 @@
 #include <iostream>
 #include <limits>
 using namespace std;
+namespace N_Utility{
+
 
 void Utility::clearConsole() {
 #ifdef _WIN32
@@ -18,4 +20,5 @@ void Utility::waitForEnter() {
 
 void Utility::clearInputBuffer() {
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
+}
 }

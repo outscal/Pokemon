@@ -1,7 +1,7 @@
 #include "BattleManager.h"
 #include "Utility.h"
 #include <iostream>
-
+using namespace N_Utility;
 void BattleManager::startBattle(Player& player, Pokemon& opposingPokemon)
 {
     
