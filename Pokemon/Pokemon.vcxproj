@@ -156,13 +156,17 @@
   <ItemGroup>
     <ClCompile Include="BattleManager.cpp" />
     <ClCompile Include="BattleState.cpp" />
+    <ClCompile Include="Caterpie.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pidgey.cpp" />
+    <ClCompile Include="Pikachu.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="ProfessorOak.cpp" />
     <ClCompile Include="Utility.cpp" />
     <ClCompile Include="WildEncounterManager.cpp" />
+    <ClCompile Include="Zubat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
@@ -173,9 +177,12 @@
   <ItemGroup>
     <ClInclude Include="BattleManager.h" />
     <ClInclude Include="BattleState.h" />
+    <ClInclude Include="Caterpie.h" />
     <ClInclude Include="EnvironmentTypes.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Grass.h" />
+    <ClInclude Include="Pidgey.h" />
+    <ClInclude Include="Pikachu.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Pokemon.h" />
     <ClInclude Include="PokemonSpecies.h" />
@@ -184,6 +191,7 @@
     <ClInclude Include="Utility.h" />
     <ClInclude Include="WildEncounterManager.h" />
     <ClInclude Include="WildPokemon.h" />
+    <ClInclude Include="Zubat.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
