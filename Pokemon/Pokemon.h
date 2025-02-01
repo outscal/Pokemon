@@ -9,17 +9,21 @@
 #include "PokemonSpecies.h"
 
 class Pokemon {
+private:
+    PokemonSpecies species;
+
+protected:
+    PokemonType type;
+    int health;
+    int maxHealth;
+    int attackPower;
 public:
     // Static dictionaries for Pokemon names and types
     static std::unordered_map<PokemonSpecies, std::string> pokemon_names;
     static std::unordered_map<PokemonSpecies, PokemonType> pokemon_types;
 
-    // Member variables
-    PokemonSpecies species;
-    PokemonType type;
-    int health;
-    int maxHealth;
-    int attackPower;
+    
+
     std::string name;
 
     // Constructors and Destructor
