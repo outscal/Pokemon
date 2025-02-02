@@ -3,6 +3,8 @@
 #include <iostream>
 #include "Utility.h"
 
+using namespace N_Utility;
+
 // Constructor
 ProfessorOak::ProfessorOak(const std::string& profName, Player& playerRef)
     : p_name(profName), player(playerRef) {

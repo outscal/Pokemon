@@ -4,7 +4,7 @@
 #include "WildEncounterManager.h"
 #include "BattleManager.h"
 
-using namespace N_Utility;
+
 
 
 void Game::GameLoop(Player& player) {
