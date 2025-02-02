@@ -40,12 +40,8 @@ Pokemon::~Pokemon() {
     
 }
 
-// Attack function
-void Pokemon::attack(Pokemon& opposingPokemon) {
-    int damage = attackPower; // Fixed damage for simplicity
-    std::cout << name << " attacks " << opposingPokemon.name << " for " << damage << " damage!\\n";
-    opposingPokemon.takeDamage(damage); // Apply damage to the target Pokémon
-}
+
+
 void Pokemon::takeDamage(int damage) {
     health -= damage; // Reduce HP by the damage amount
     if (health < 0) {

@@ -7,5 +7,7 @@ private:
 
 public:
     Charmander();
+    void attack(Pokemon& target) override;
+    
 
 };

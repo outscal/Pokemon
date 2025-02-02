@@ -13,4 +13,7 @@ void Pikachu::thunderShock(Pokemon& target) {
     cout << name << " uses Thunder Shock on " << target.name << "!\n";
     target.takeDamage(20);
 }
+void Pikachu::attack(Pokemon& target) {
+    thunderShock(target);
+}
     

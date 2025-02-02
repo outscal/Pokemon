@@ -3,9 +3,13 @@
 #include <iostream>
 using namespace std;
 
-Balbasaur::Balbasaur() : Pokemon(PokemonSpecies::Bulbasaur, 50) {}
+Bulbasaur::Bulbasaur() : Pokemon(PokemonSpecies::Bulbasaur, 50) {}
 
-void Balbasaur::vineWhip(Pokemon& target) {
+void Bulbasaur::vineWhip(Pokemon& target) {
     cout << name << " uses vine Whip on " << target.name << "!\n";
     target.takeDamage(20);
+}
+
+void Bulbasaur::attack(Pokemon& target) {
+    vineWhip(target);
 }

@@ -2,11 +2,12 @@
 #include "Pokemon.h"
 
 
-class Balbasaur : public Pokemon {
+class Bulbasaur : public Pokemon {
 private:
     void vineWhip(Pokemon& target);
 
 public:
-    Balbasaur();
+    Bulbasaur();
+    void attack(Pokemon& target) override;
 
 };

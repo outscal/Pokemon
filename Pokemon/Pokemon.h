@@ -33,7 +33,7 @@ public:
     ~Pokemon();
 
     // Member functions
-    void attack(Pokemon& opposingPokemon);
+    virtual void attack(Pokemon& opposingPokemon) = 0; // syntax for an abstract function declaration 
     void constructNameDictionary();
     void constructTypeDictionary();
     void takeDamage(int damage);
