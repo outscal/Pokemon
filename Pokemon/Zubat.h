@@ -7,4 +7,5 @@ public:
     void attack(Pokemon& target) override;
 private:
     void supersonic(Pokemon& target);
+    int attackPower;
 };

@@ -4,6 +4,7 @@
 class Charmander : public Pokemon {
 private:
     void flameThrower(Pokemon& target);
+    int attackPower;
 
 public:
     Charmander();

@@ -5,6 +5,7 @@ class Caterpie : public Pokemon {
 public:
     Caterpie();
     void attack(Pokemon& target) override;
+    int attackPower;
 private:
     void bugBite(Pokemon& target);
 };

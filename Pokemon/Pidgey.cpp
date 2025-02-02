@@ -2,11 +2,11 @@
 #include <iostream>
 using namespace std;
 
-Pidgey::Pidgey() : Pokemon(PokemonSpecies::Pidgey, 35) {}
+Pidgey::Pidgey() : Pokemon(PokemonSpecies::Pidgey, 35) { attackPower = 15; }
 
 void Pidgey::wingAttack(Pokemon& target) {
     cout << name << " uses Wing Attack on " << target.name << "!\n";
-    target.takeDamage(20);
+    target.takeDamage(attackPower);
 }
 
 void Pidgey::attack(Pokemon& target) {

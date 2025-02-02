@@ -3,7 +3,7 @@
 
 class Squirtle : public Pokemon {
 private:
-   
+    int attackPower;
     void waterSplash(Pokemon& target);
 
 public:

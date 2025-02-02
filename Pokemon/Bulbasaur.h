@@ -5,6 +5,7 @@
 class Bulbasaur : public Pokemon {
 private:
     void vineWhip(Pokemon& target);
+    int attackPower;
 
 public:
     Bulbasaur();
