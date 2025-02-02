@@ -6,8 +6,12 @@
 
 
 class WildPokemon : public Pokemon{
+private:
+	Pokemon* pokemon;
 public:
 	WildPokemon(PokemonSpecies encounteredPokemon);
+	void attack(Pokemon& target) override;
+
 };
 
 

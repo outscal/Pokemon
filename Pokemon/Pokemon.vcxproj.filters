@@ -78,6 +78,9 @@
     <ClCompile Include="Bulbasaur.cpp">
       <Filter>Source Files\Pokemon</Filter>
     </ClCompile>
+    <ClCompile Include="WildPokemon.cpp">
+      <Filter>Source Files\Battle</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BattleManager.h">
@@ -138,6 +141,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Bulbasaur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AllPokemon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -169,6 +169,7 @@
     <ClCompile Include="Squirtle.cpp" />
     <ClCompile Include="Utility.cpp" />
     <ClCompile Include="WildEncounterManager.cpp" />
+    <ClCompile Include="WildPokemon.cpp" />
     <ClCompile Include="Zubat.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +179,7 @@
     <Content Include="Pokemon.vcxproj.filters" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AllPokemon.h" />
     <ClInclude Include="BattleManager.h" />
     <ClInclude Include="BattleState.h" />
     <ClInclude Include="Bulbasaur.h" />

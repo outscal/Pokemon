@@ -10,7 +10,7 @@ class Player {
 public:
     // Member variables
     std::string p_name;
-    Pokemon p_chosenPokemon;
+    Pokemon* p_chosenPokemon;
 
     // Constructors
     Player();

@@ -4,7 +4,7 @@
 #include "WildEncounterManager.h"
 #include "BattleManager.h"
 
-
+using namespace N_Utility;
 
 
 void Game::GameLoop(Player& player) {
@@ -52,8 +52,8 @@ void Game::GameLoop(Player& player) {
         }
             case 2:
                 cout << "You head to the PokeCenter.\\n";
-                player.p_chosenPokemon.healToFullHealth(); // Heal the player's Pokémon
-                cout << player.p_chosenPokemon.name << "'s health is fully restored!\\n";
+                player.p_chosenPokemon->healToFullHealth(); // Heal the player's Pokémon
+                cout << player.p_chosenPokemon->name << "'s health is fully restored!\\n";
                 break;
 
             case 3:
