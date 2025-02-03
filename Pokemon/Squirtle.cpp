@@ -3,12 +3,12 @@
 #include <iostream>
 using namespace std;
 
-Squirtle::Squirtle() : Pokemon(PokemonSpecies::Squirtle, 50) { attackPower = 20; }
+Squirtle::Squirtle() : Pokemon(PokemonSpecies::Squirtle, 50) { }
 
 void Squirtle::waterSplash(Pokemon& target) {
     cout << name << " uses Water splash on " << target.name << "!\n";
     target.takeDamage(attackPower);
 }
 void Squirtle::attack(Pokemon& target) {
-    waterSplash(target);
+    selectAndUseMove(&target);
 }

@@ -2,10 +2,23 @@
 #include "Utility.h"
 #include <iostream>
 using namespace N_Utility;
+
+BattleManager::BattleManager()
+{
+    if (instance == nullptr)
+    {
+        instance = this;
+    }
+    else {
+        delete this;
+    }
+}
+
+
 void BattleManager::startBattle(Player& player, Pokemon& opposingPokemon)
 {
     
-    battleState.playerPokemon = &player.p_chosenPokemon;
+    battleState.playerPokemon = player.p_chosenPokemon;
     battleState.wildPokemon = &opposingPokemon;
     battleState.playerTurn = true;  // Player starts first
     battleState.battleOngoing = true;
@@ -13,7 +26,7 @@ void BattleManager::startBattle(Player& player, Pokemon& opposingPokemon)
     
     
     std::cout << "A wild " << opposingPokemon.name << " appeared!\n";
-    battle(player.p_chosenPokemon, opposingPokemon);
+    battle(*player.p_chosenPokemon, opposingPokemon);
 }
 
 
@@ -22,11 +35,11 @@ void BattleManager::battle(Pokemon& playerPokemon, Pokemon& opposingPokemon)
     while (battleState.battleOngoing) {
         if (battleState.playerTurn) {
             // Player's turn to attack
-            battleState.playerPokemon->attack(*battleState.wildPokemon);
+            battleState.playerPokemon->selectAndUseMove(battleState.wildPokemon);
         }
         else {
             // Wild Pokémon's turn to attack
-            battleState.wildPokemon->attack(*battleState.playerPokemon);
+            battleState.wildPokemon->selectAndUseMove(battleState.playerPokemon);
         }
 
         // Update the battle state after the turn
@@ -58,4 +71,9 @@ void BattleManager::updateBattleState() {
     else if (battleState.wildPokemon->isFainted()) {
         battleState.battleOngoing = false;
     }
+}
+void BattleManager::stopBattle()
+{
+    battleState.battleOngoing = false;
+    cout << "The battle has ended" << endl;
 }

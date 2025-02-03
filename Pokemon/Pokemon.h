@@ -7,6 +7,7 @@
 #include <unordered_map>
 #include "PokemonTypes.h"
 #include "PokemonSpecies.h"
+#include "Move.h"
 
 class Pokemon {
 private:
@@ -16,7 +17,8 @@ protected:
     PokemonType type;
     int health;
     int maxHealth;
-    int attackPower;
+    int attackPower = 1;
+    vector<Move> moves; // Store the list of moves
 public:
     // Static dictionaries for Pokemon names and types
     static std::unordered_map<PokemonSpecies, std::string> pokemon_names;
@@ -39,6 +41,33 @@ public:
     void takeDamage(int damage);
     bool isFainted();
     void healToFullHealth(); // Method to restore HP to max
+    void selectAndUseMove(Pokemon* target);
+    void printAvailableMoves();
+    int selectMove();
+    void useMove(Move selectedMove, Pokemon* target);
+    void changeAttackPower(int modifier);
+    
+    // list of methods for all moves
+    void vineWhip(Move selectedMove, Pokemon* target);
+
+    
+    void stickyWeb(Move selectedMove, Pokemon* target);
+
+    
+    void blazingCharge(Move selectedMove, Pokemon* target);
+
+    
+    void gust(Move selectedMove, Pokemon* target);
+
+    
+    void thunderbolt(Move selectedMove, Pokemon* target);
+
+    
+    void rapidSpin(Move selectedMove, Pokemon* target);
+
+    
+    void leechLife(Move selectedMove, Pokemon* target);
+    
 };
 
 #endif // POKEMON_H

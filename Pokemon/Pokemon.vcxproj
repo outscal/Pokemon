@@ -188,6 +188,7 @@
     <ClInclude Include="EnvironmentTypes.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Grass.h" />
+    <ClInclude Include="Move.h" />
     <ClInclude Include="Pidgey.h" />
     <ClInclude Include="Pikachu.h" />
     <ClInclude Include="Player.h" />

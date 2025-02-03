@@ -16,8 +16,10 @@ public:
 	void battle(Pokemon& playerPokemon, Pokemon& opposingPokemon);
 	void handleBattleOutcome();
 	void updateBattleState();
+	static void stopBattle();
 private:
-	BattleState battleState;  // New BattleState object to track the battle
+	static BattleState battleState;  // New BattleState object to track the battle
+	static BattleManager* instance;
 };
 
 
