@@ -161,6 +161,7 @@
     <ClCompile Include="Charmander.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ParalyzedEffect.cpp" />
     <ClCompile Include="Pidgey.cpp" />
     <ClCompile Include="Pikachu.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -190,6 +191,7 @@
     <ClInclude Include="Grass.h" />
     <ClInclude Include="IStatusEffect.h" />
     <ClInclude Include="Move.h" />
+    <ClInclude Include="ParalyzedEffect.h" />
     <ClInclude Include="Pidgey.h" />
     <ClInclude Include="Pikachu.h" />
     <ClInclude Include="Player.h" />

@@ -28,6 +28,9 @@
     <Filter Include="Source Files\Utility">
       <UniqueIdentifier>{91967225-cd4f-4c30-8e32-c5696d1218ea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\StatusEffects">
+      <UniqueIdentifier>{999ed3a4-0362-4620-b6f1-fcfd9c982489}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BattleManager.cpp">
@@ -80,6 +83,9 @@
     </ClCompile>
     <ClCompile Include="WildPokemon.cpp">
       <Filter>Source Files\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="ParalyzedEffect.cpp">
+      <Filter>Source Files\StatusEffects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +156,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IStatusEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParalyzedEffect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
