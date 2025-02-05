@@ -1,11 +1,8 @@
 #include <iostream>
-#include <limits> // Include this header to use numeric_limits
 #include <string>
 using namespace std;
 
-// Function to clear the console
 void clearConsole() {
-    // Platform-specific clear console command
 #ifdef _WIN32
     system("cls");
 #else
@@ -13,77 +10,66 @@ void clearConsole() {
 #endif
 }
 
-// Function to wait for user to press Enter
 void waitForEnter() {
-    cin.get(); // Wait for Enter key
+    cin.get();
 }
 
-// Define an enum for Pokemon choices
 enum class PokemonChoice {
     CHARMANDER = 1,
     BULBASAUR,
     SQUIRTLE,
-    PIKACHU // Default choice
+    PIKACHU
 };
 
-// Define an enum for Pokemon types
 enum class PokemonType {
     FIRE,
     GRASS,
     WATER,
     ELECTRIC,
-    NORMAL // Added for the default constructor
+    NORMAL
 };
 
-// Pokemon class definition
 class Pokemon {
 public:
     string name;
     PokemonType type;
     int health;
 
-    // Default constructor
     Pokemon() {
         name = "Unknown";
         type = PokemonType::NORMAL;
         health = 50;
     }
 
-    // Parameterized constructor
     Pokemon(std::string p_name, PokemonType p_type, int p_health) {
         name = p_name;
         type = p_type;
         health = p_health;
     }
 
-    // Copy constructor
     Pokemon(const Pokemon& other) {
         name = other.name;
         type = other.type;
         health = other.health;
     }
 
-    // Destructor
     ~Pokemon() {
-        // Destructor message removed
+
     }
 
     void attack() { std::cout << name << " attacks with a powerful move!\n"; }
 };
 
-// Player class definition
 class Player {
 public:
     string name;
     Pokemon chosenPokemon;
 
-    // Default constructor
     Player() {
         name = "Trainer";
-        chosenPokemon = Pokemon(); // Using the default Pokemon constructor
+        chosenPokemon = Pokemon();
     }
 
-    // Parameterized constructor
     Player(std::string p_name, Pokemon p_chosenPokemon) {
         name = p_name;
         chosenPokemon = p_chosenPokemon;
@@ -105,16 +91,14 @@ public:
             break;
         }
         cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";
-        waitForEnter(); // Wait for user to press Enter before proceeding
+        waitForEnter(); 
     }
 };
 
-// ProfessorOak class definition
 class ProfessorOak {
 public:
     string name;
 
-    // Parameterized constructor
     ProfessorOak(string p_name) { name = p_name; }
 
     void greetPlayer(Player& player) {
@@ -140,7 +124,6 @@ public:
             "you’ll need a Pokemon of your own!\n";
         waitForEnter();
 
-        // Presenting Pokemon choices
         cout
             << name
             << ": I have three Pokemon here with me. They’re all quite feisty!\n";
@@ -160,9 +143,8 @@ public:
         waitForEnter();
     }
 
-    // New method for the main quest conversation
     void explainMainQuest(Player& player) {
-        // Clear the console
+
         clearConsole();
 
         cout << "Professor Oak: " << player.name
@@ -220,16 +202,13 @@ public:
     }
 };
 
-// Function to handle the main game loop
 void gameLoop(Player& player) {
     int choice;
     bool keepPlaying = true;
 
     while (keepPlaying) {
-        // Clear console before showing options
         clearConsole();
 
-        // Display options to the player
         cout << "\nWhat would you like to do next, " << player.name << "?\n";
         cout << "1. Battle Wild Pokémon\n";
         cout << "2. Visit PokeCenter\n";
@@ -239,11 +218,9 @@ void gameLoop(Player& player) {
         cout << "Enter your choice: ";
         cin >> choice;
 
-        // Clear the newline character left in the buffer after cin >> choice
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 
-        // Process the player's choice and display the corresponding message
         switch (choice) {
         case 1:
             cout << "You look around... but all the wild Pokémon are on "
@@ -277,8 +254,6 @@ void gameLoop(Player& player) {
             break;
         }
 
-        // Wait for Enter key before the screen is cleared and the menu is shown
-        // again
         waitForEnter();
     }
 
@@ -286,22 +261,18 @@ void gameLoop(Player& player) {
 }
 
 int main() {
-    // Create Pokemon and Player objects for the game
     Pokemon charmander("Charmander", PokemonType::FIRE,
-        100); // Using parameterized constructor
+        100);
 
-    // Continue with the main flow of the game
     ProfessorOak professor("Professor Oak");
     Player player("Ash", charmander);
 
-    // Greet the player and offer Pokemon choices
     professor.greetPlayer(player);
+
     professor.offerPokemonChoices(player);
 
-    // Explain the main quest
     professor.explainMainQuest(player);
 
-    // Start the main game loop
     gameLoop(player);
 
     return 0;
