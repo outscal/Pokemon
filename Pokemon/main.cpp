@@ -1,6 +1,8 @@
 #include <iostream>
 #include <limits> // Include this header to use numeric_limits
 #include <string>
+#include"PokemonType.hpp"
+#include"PokemonChoice.hpp"
 using namespace std;
 
 // Function to clear the console
@@ -17,23 +19,6 @@ void clearConsole() {
 void waitForEnter() {
     cin.get(); // Wait for Enter key
 }
-
-// Define an enum for Pokemon choices
-enum class PokemonChoice {
-    CHARMANDER = 1,
-    BULBASAUR,
-    SQUIRTLE,
-    PIKACHU // Default choice
-};
-
-// Define an enum for Pokemon types
-enum class PokemonType {
-    FIRE,
-    GRASS,
-    WATER,
-    ELECTRIC,
-    NORMAL // Added for the default constructor
-};
 
 // Pokemon class definition
 class Pokemon {
@@ -305,4 +290,4 @@ int main() {
     gameLoop(player);
 
     return 0;
-#include "Header.hpp"
+}
