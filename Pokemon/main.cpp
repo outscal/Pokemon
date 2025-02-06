@@ -4,6 +4,7 @@
 #include"PokemonType.hpp"
 #include"PokemonChoice.hpp"
 #include"Utility.hpp"
+#include"Player.hpp"
 
 using namespace std;
 
