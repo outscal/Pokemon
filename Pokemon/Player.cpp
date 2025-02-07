@@ -1,6 +1,8 @@
+#pragma once
 #include "Player.hpp"
 #include <iostream>
 using namespace std;
+
 
 Player::Player() {
     name = "Trainer";

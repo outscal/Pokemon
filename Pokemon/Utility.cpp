@@ -1,3 +1,4 @@
+#pragma once
 #include"Utility.hpp"
 #include<iostream>
 #include<limits>
