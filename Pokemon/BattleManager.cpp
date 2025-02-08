@@ -35,11 +35,25 @@ void BattleManager::battle(Pokemon& playerPokemon, Pokemon& opposingPokemon)
     while (battleState.battleOngoing) {
         if (battleState.playerTurn) {
             // Player's turn to attack
-            battleState.playerPokemon->selectAndUseMove(battleState.wildPokemon);
+            if (!playerPokemon.canAttack())
+            { 
+                cout << "due to a status condition, your pokemon cannot attack" << endl;
+            }
+            else {
+                battleState.playerPokemon->selectAndUseMove(battleState.wildPokemon);
+            }
         }
         else {
+            if (!opposingPokemon.canAttack())
+            {
+                cout << "due to a status condition, the opponent's pokemon cannot attack" << endl;
+            }
             // Wild Pokémon's turn to attack
-            battleState.wildPokemon->selectAndUseMove(battleState.playerPokemon);
+            else
+            {
+                battleState.wildPokemon->selectAndUseMove(battleState.playerPokemon);
+            }
+            
         }
 
         // Update the battle state after the turn

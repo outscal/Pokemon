@@ -161,5 +161,8 @@
     <ClInclude Include="ParalyzedEffect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StatusEffectType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

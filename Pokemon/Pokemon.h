@@ -8,6 +8,9 @@
 #include "PokemonTypes.h"
 #include "PokemonSpecies.h"
 #include "Move.h"
+#include "IStatusEffect.h"
+#include "StatusEffectType.h"
+#include "ParalyzedEffect.h"
 
 class Pokemon {
 private:
@@ -18,6 +21,7 @@ protected:
     int health;
     int maxHealth;
     int attackPower = 1;
+    IStatusEffect* appliedEffect;
     vector<Move> moves; // Store the list of moves
 public:
     // Static dictionaries for Pokemon names and types
@@ -46,6 +50,11 @@ public:
     int selectMove();
     void useMove(Move selectedMove, Pokemon* target);
     void changeAttackPower(int modifier);
+    void applyEffect(StatusEffectType effectToApply);
+    bool canApplyEffect();
+    bool canAttack();
+    void clearEffect();
+
     
     // list of methods for all moves
     void vineWhip(Move selectedMove, Pokemon* target);

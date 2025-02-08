@@ -45,6 +45,44 @@ Pokemon::~Pokemon() {
     
 }
 
+bool Pokemon::canAttack()
+{
+    if (appliedEffect == nullptr)
+        return true;
+    else
+        return appliedEffect->turnEndEffect(this);
+}
+
+void Pokemon::applyEffect(StatusEffectType effectToApply)
+{
+    switch (effectToApply)
+    {
+    case StatusEffectType::PARALYZED:
+        appliedEffect = new ParalyzedEffect();
+        appliedEffect->applyEffect(this);
+        break;
+    default:
+        appliedEffect = nullptr;
+    }
+}
+
+bool Pokemon::canApplyEffect() { return appliedEffect == nullptr; }
+
+void Pokemon::applyEffect(StatusEffectType effectToApply)
+{
+    switch (effectToApply)
+    {
+    case StatusEffectType::PARALYZED:
+        appliedEffect = new ParalyzedEffect();
+        appliedEffect->applyEffect(this);
+        break;
+    default:
+        appliedEffect = nullptr;
+    }
+}
+
+void Pokemon::clearEffect() { appliedEffect = nullptr; }
+
 void Pokemon::changeAttackPower(int modifier)
 {
     if (modifier <= 1 && modifier >= 0) {
@@ -162,6 +200,10 @@ void Pokemon::thunderbolt(Move selectedMove, Pokemon* target) {
     {
         target->takeDamage(selectedMove.power * attackPower);
         std::cout << "... and it hit successfully!\n";
+        if (target->canApplyEffect())
+        {
+            target->applyEffect(StatusEffectType::PARALYZED);
+        }
     }
     else
         std::cout << "... but it missed!\n";
