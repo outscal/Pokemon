@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <limits>
 using namespace std;
 
 // Function to clear the console
@@ -13,110 +12,103 @@ void clearConsole() {
 #endif
 }
 
+// Function to wait for user to press Enter
 void waitForEnter() {
     cin.get(); // Wait for Enter key
 }
 
-
+// Define an enum for Pokemon choices
 enum class PokemonChoice {
-    Charmander = 1,
-    Bulbasaur,
-    Squirtle,
-    Pikachu //default
+    CHARMANDER = 1,
+    BULBASAUR,
+    SQUIRTLE,
+    PIKACHU // Default choice
 };
 
+// Define an enum for Pokemon types
 enum class PokemonType {
-    Fire,
-    Grass,
-    Water,
-    Electric,
-    Normal // default
+    FIRE,
+    GRASS,
+    WATER,
+    ELECTRIC,
+    NORMAL // Added for the default constructor
 };
 
+// Pokemon class definition
 class Pokemon {
 public:
     string name;
     PokemonType type;
     int health;
 
-
-    //constructor
+    // Default constructor
     Pokemon() {
         name = "Unknown";
-        type = PokemonType::Normal;
+        type = PokemonType::NORMAL;
         health = 50;
-        cout << "A new Pokemon has been created with the default constructor!\n" << endl;
     }
 
-
-    //parameterised constructor
-    Pokemon(string p_name, PokemonType p_type, int p_health) {
+    // Parameterized constructor
+    Pokemon(std::string p_name, PokemonType p_type, int p_health) {
         name = p_name;
         type = p_type;
         health = p_health;
-        cout << "A new Pokemon named " << name << " has been created!\n";
     }
 
-    //Copy Constructor
+    // Copy constructor
     Pokemon(const Pokemon& other) {
         name = other.name;
         type = other.type;
         health = other.health;
-        cout << "A new Pokemon has been copied from " << other.name << "!\n";
     }
 
-    //destructor
+    // Destructor
     ~Pokemon() {
-        cout << name << " has been released.\n";
+        // Destructor message removed
     }
 
-    void attack() {
-        cout << name << " attacks with a powerful move!\n";
-    }
+    void attack() { std::cout << name << " attacks with a powerful move!\n"; }
 };
 
+// Player class definition
 class Player {
 public:
-    //attributes
     string name;
     Pokemon chosenPokemon;
 
-    //default constructor
+    // Default constructor
     Player() {
         name = "Trainer";
-        chosenPokemon = Pokemon();
-        cout << "A new player named " << name << " has been created!\n";
+        chosenPokemon = Pokemon(); // Using the default Pokemon constructor
     }
 
-    //parameterised constructor
-    Player(string p_name, Pokemon p_chosenPokemon) {
+    // Parameterized constructor
+    Player(std::string p_name, Pokemon p_chosenPokemon) {
         name = p_name;
         chosenPokemon = p_chosenPokemon;
-        cout << "Player " << name << " has been created!\n";
     }
-
 
     void choosePokemon(int choice) {
         switch ((PokemonChoice)choice) {
-
-        case PokemonChoice::Charmander:
-            chosenPokemon = Pokemon("Charmander", PokemonType::Fire, 100);
+        case PokemonChoice::CHARMANDER:
+            chosenPokemon = Pokemon("Charmander", PokemonType::FIRE, 100);
             break;
-        case PokemonChoice::Bulbasaur:
-            chosenPokemon = Pokemon("Bulbasaur", PokemonType::Grass, 100);
+        case PokemonChoice::BULBASAUR:
+            chosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100);
             break;
-        case PokemonChoice::Squirtle:
-            chosenPokemon = Pokemon("Squirtle", PokemonType::Water, 100);
+        case PokemonChoice::SQUIRTLE:
+            chosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100);
             break;
         default:
-            chosenPokemon = Pokemon("Pikachu", PokemonType::Electric, 100);
+            chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100);
+            break;
         }
-
         cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";
-        waitForEnter();
+        waitForEnter(); // Wait for user to press Enter before proceeding
     }
 };
 
+// ProfessorOak class definition
 class ProfessorOak {
 public:
     string name;
@@ -227,6 +219,7 @@ public:
     }
 };
 
+// Function to handle the main game loop
 void gameLoop(Player& player) {
     int choice;
     bool keepPlaying = true;
@@ -288,10 +281,12 @@ void gameLoop(Player& player) {
         waitForEnter();
     }
 
+    cout << "Goodbye, " << player.name << "! Thanks for playing!\n";
 }
+
 int main() {
     // Create Pokemon and Player objects for the game
-    Pokemon charmander("Charmander", PokemonType::Fire,
+    Pokemon charmander("Charmander", PokemonType::FIRE,
         100); // Using parameterized constructor
 
     // Continue with the main flow of the game
