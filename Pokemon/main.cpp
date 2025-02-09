@@ -303,5 +303,8 @@ int main() {
     // Start the main game loop
     gameLoop(player);
 
+
     return 0;
-}
+
+
+#include "Header.h"
