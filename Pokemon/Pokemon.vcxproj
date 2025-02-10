@@ -155,6 +155,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
@@ -165,6 +166,7 @@
   <ItemGroup>
     <ClInclude Include="PokemonChoice.hpp" />
     <ClInclude Include="PokemonType.hpp" />
+    <ClInclude Include="Utility.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

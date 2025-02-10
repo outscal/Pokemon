@@ -1,23 +1,10 @@
-#include <iostream>
-#include <string>
 #include "PokemonType.hpp"
 #include "PokemonChoice.hpp"
+#include "Utility.hpp"
+#include <limits>
+#include <iostream>
+#include <string>
 using namespace std;
-
-// Function to clear the console
-void clearConsole() {
-    // Platform-specific clear console command
-#ifdef _WIN32
-    system("cls");
-#else
-    (void)system("clear");
-#endif
-}
-
-// Function to wait for user to press Enter
-void waitForEnter() {
-    cin.get(); // Wait for Enter key
-}
 
 // Pokemon class definition
 class Pokemon {
