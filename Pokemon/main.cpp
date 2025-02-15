@@ -1,51 +1,12 @@
 
-#include "PokemonType.hpp"
-#include "PokemonChoice.hpp"
+#include "PokemonChoice.hpp"   
+#include "Pokemon.hpp"         // This will give you the Pokemon class definition
+#include "Player.hpp"
 #include "Utility.hpp"
-#include <limits>
 #include <iostream>
+#include <limits>
 #include <string>
 using namespace std;
-
-// Pokemon class definition
-class Pokemon {
-public:
-    string name;
-    PokemonType type;
-    int health;
-
-    // Default constructor
-    Pokemon() {
-        name = "Unknown";
-        type = PokemonType::NORMAL;
-        health = 50;
-    }
-
-    // Parameterized constructor
-    Pokemon(std::string p_name, PokemonType p_type, int p_health) {
-        name = p_name;
-        type = p_type;
-        health = p_health;
-    }
-
-    // Copy constructor
-    Pokemon(const Pokemon& other) {
-        name = other.name;
-        type = other.type;
-        health = other.health;
-    }
-
-    // Destructor
-    ~Pokemon() {
-        // Destructor message removed
-    }
-
-    void attack() { std::cout << name << " attacks with a powerful move!\n"; }
-};
-
-
-#include "Player.hpp"
-
 
 // ProfessorOak class definition
 class ProfessorOak {
@@ -69,7 +30,7 @@ public:
         cout
             << name
             << ": First, tell me, what’s your name? \t [Please Enter Your Name]\n";
-        getline(std::cin, player.name);
+        getline(cin, player.name);
         cout << name << ": Ah, " << player.name
             << "! What a fantastic name!\n";
         Utility::waitForEnter();
@@ -177,9 +138,7 @@ void gameLoop(Player& player) {
         cout << "Enter your choice: ";
         cin >> choice;
 
-        // Clear the newline character left in the buffer after cin >> choice
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
+        Utility::clearInputBuffer(); // Clear the input buffer
 
         // Process the player's choice and display the corresponding message
         switch (choice) {
@@ -242,8 +201,5 @@ int main() {
     // Start the main game loop
     gameLoop(player);
 
-
     return 0;
-
-
 }

@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="Utility.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.hpp" />
+    <ClInclude Include="Pokemon.hpp" />
     <ClInclude Include="PokemonChoice.hpp" />
     <ClInclude Include="PokemonType.hpp" />
     <ClInclude Include="Utility.hpp" />

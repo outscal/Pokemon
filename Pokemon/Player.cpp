@@ -1,16 +1,19 @@
-// Player.cpp
 #include "Player.hpp"
-#include <iostream>
-#include "PokemonType.hpp"
 #include "PokemonChoice.hpp"
+//#include "PokemonType.hpp"
 #include "Utility.hpp"
+#include <iostream>
 using namespace std;
+// Player class definition
 
+
+  // Default constructor
 Player::Player() {
     name = "Trainer";
     chosenPokemon = Pokemon(); // Using the default Pokemon constructor
 }
 
+// Parameterized constructor
 Player::Player(string p_name, Pokemon p_chosenPokemon) {
     name = p_name;
     chosenPokemon = p_chosenPokemon;

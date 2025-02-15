@@ -1,8 +1,10 @@
-// Player.h
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
+
+
 #include <string>
-
+#include "Pokemon.hpp"
 using namespace std;
-
 class Player {
 public:
     string name;
@@ -13,3 +15,5 @@ public:
 
     void choosePokemon(int choice); // Method to choose a Pokemon
 };
+
+#endif
