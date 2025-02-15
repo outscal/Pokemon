@@ -1,6 +1,9 @@
 // Player.cpp
 #include "Player.hpp"
-#include "iostream"
+#include <iostream>
+#include "PokemonType.hpp"
+#include "PokemonChoice.hpp"
+#include "Utility.hpp"
 using namespace std;
 
 Player::Player() {
