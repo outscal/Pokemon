@@ -2,8 +2,9 @@
 #define POKEMON_HPP
 
 #include <string>
-#include "PokemonType.hpp"
 using namespace std;
+
+enum class PokemonType;
 
 class Pokemon {
 public:
@@ -25,5 +26,6 @@ public:
 
     void attack();
 };
+
 
 #endif

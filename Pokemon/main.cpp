@@ -1,12 +1,14 @@
-
-#include "PokemonChoice.hpp"   
-#include "Pokemon.hpp"         // This will give you the Pokemon class definition
 #include "Player.hpp"
+#include "Pokemon.hpp"
+#include "PokemonChoice.hpp"
+#include "PokemonType.hpp"
 #include "Utility.hpp"
 #include <iostream>
-#include <limits>
+#include <limits> // Include this header to use numeric_limits
 #include <string>
 using namespace std;
+
+
 
 // ProfessorOak class definition
 class ProfessorOak {
@@ -29,20 +31,20 @@ public:
     void offerPokemonChoices(Player& player) {
         cout
             << name
-            << ": First, tell me, what’s your name? \t [Please Enter Your Name]\n";
+            << ": First, tell me, what's your name? \t [Please Enter Your Name]\n";
         getline(cin, player.name);
         cout << name << ": Ah, " << player.name
             << "! What a fantastic name!\n";
         Utility::waitForEnter();
         cout << name
             << ": You must be eager to start your adventure. But first, "
-            "you’ll need a Pokemon of your own!\n";
+            "you'll need a Pokemon of your own!\n";
         Utility::waitForEnter();
 
         // Presenting Pokemon choices
         cout
             << name
-            << ": I have three Pokemon here with me. They’re all quite feisty!\n";
+            << ": I have three Pokemon here with me. They're all quite feisty!\n";
         Utility::waitForEnter();
         cout << name << ": Choose wisely...\n";
         cout << "1. Charmander - The fire type. A real hothead!\n";
@@ -68,7 +70,7 @@ public:
             << "!, I am about to explain you about your upcoming grand "
             "adventure.\n";
         Utility::waitForEnter();
-        cout << "Professor Oak: You see, becoming a Pokémon Master is no easy "
+        cout << "Professor Oak: You see, becoming a Pokemon Master is no easy "
             "feat. It takes courage, wisdom, and a bit of luck!\n";
         Utility::waitForEnter();
         cout
