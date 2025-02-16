@@ -1,10 +1,83 @@
 ﻿  Game.cpp
-D:\C++ Intermediate\Pokemon\Pokemon\Game.cpp(38,13): error C2065: 'WildEncounterManager': undeclared identifier
-D:\C++ Intermediate\Pokemon\Pokemon\Game.cpp(38,34): error C2146: syntax error: missing ';' before identifier 'encounterManager'
-D:\C++ Intermediate\Pokemon\Pokemon\Game.cpp(38,34): error C2065: 'encounterManager': undeclared identifier
-D:\C++ Intermediate\Pokemon\Pokemon\Game.cpp(40,17): error C2065: 'encounterManager': undeclared identifier
-D:\C++ Intermediate\Pokemon\Pokemon\Game.cpp(40,60): error C2065: 'forestGrass': undeclared identifier
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,13): error C3484: syntax error: expected '->' before the return type
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,14): error C3613: missing return type after '->' ('int' assumed)
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,14): error C3646: 'getRandomPokemonFromGrass': unknown override specifier
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,39): error C2059: syntax error: '('
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(11,1): error C2143: syntax error: missing ';' before '}'
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(11,1): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,27): error C2027: use of undefined type 'PokemonType'
+  (compiling source file 'Game.cpp')
+      D:\C++ Intermediate\Pokemon\Pokemon\Pokemon.hpp(7,12):
+      see declaration of 'PokemonType'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,27): error C2065: 'NORMAL': undeclared identifier
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,66): error C2027: use of undefined type 'PokemonType'
+  (compiling source file 'Game.cpp')
+      D:\C++ Intermediate\Pokemon\Pokemon\Pokemon.hpp(7,12):
+      see declaration of 'PokemonType'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,66): error C2065: 'BUG': undeclared identifier
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,26): error C2027: use of undefined type 'PokemonType'
+  (compiling source file 'Game.cpp')
+      D:\C++ Intermediate\Pokemon\Pokemon\Pokemon.hpp(7,12):
+      see declaration of 'PokemonType'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,26): error C2065: 'POISON': undeclared identifier
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,64): error C2027: use of undefined type 'PokemonType'
+  (compiling source file 'Game.cpp')
+      D:\C++ Intermediate\Pokemon\Pokemon\Pokemon.hpp(7,12):
+      see declaration of 'PokemonType'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,64): error C2065: 'ROCK': undeclared identifier
+  (compiling source file 'Game.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Game.cpp(40,34): error C2039: 'getRandomPokemonFromGrass': is not a member of 'WildEncounterManager'
+      D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(8,7):
+      see declaration of 'WildEncounterManager'
+  
   main.cpp
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,13): error C3484: syntax error: expected '->' before the return type
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,14): error C3613: missing return type after '->' ('int' assumed)
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,14): error C3646: 'getRandomPokemonFromGrass': unknown override specifier
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,39): error C2059: syntax error: '('
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(11,1): error C2143: syntax error: missing ';' before '}'
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(11,1): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'main.cpp')
+  
 D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(11,9): error C2065: 'Pokemon': undeclared identifier
   (compiling source file 'main.cpp')
   
@@ -18,4 +91,118 @@ D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(11,2): error C2976: 'std::vector':
       D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
       see declaration of 'std::vector'
   
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,14): error C2653: 'PokemonType': is not a class or namespace name
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,27): error C2065: 'NORMAL': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,53): error C2653: 'PokemonType': is not a class or namespace name
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,66): error C2065: 'BUG': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(13,1): error C2512: 'std::vector': no appropriate default constructor available
+  (compiling source file 'main.cpp')
+      D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+      see declaration of 'std::vector'
+      D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(13,1):
+      This diagnostic occurred in the compiler generated function 'Grass::Grass(void)'
+      D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(15,19):
+      see reference to function 'Grass::Grass(void)'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,13): error C2653: 'PokemonType': is not a class or namespace name
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,26): error C2065: 'POISON': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,51): error C2653: 'PokemonType': is not a class or namespace name
+  (compiling source file 'main.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,64): error C2065: 'ROCK': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+  WildEncounterManager.cpp
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(11,9): error C2065: 'Pokemon': undeclared identifier
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(11,2): error C2923: 'std::vector': 'Pokemon' is not a valid template type argument for parameter '_Ty'
+  (compiling source file 'WildEncounterManager.cpp')
+      D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(11,9):
+      see declaration of 'Pokemon'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(11,2): error C2976: 'std::vector': too few template arguments
+  (compiling source file 'WildEncounterManager.cpp')
+      D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+      see declaration of 'std::vector'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,14): error C2653: 'PokemonType': is not a class or namespace name
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,27): error C2065: 'NORMAL': undeclared identifier
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,53): error C2653: 'PokemonType': is not a class or namespace name
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(17,66): error C2065: 'BUG': undeclared identifier
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(13,1): error C2512: 'std::vector': no appropriate default constructor available
+  (compiling source file 'WildEncounterManager.cpp')
+      D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+      see declaration of 'std::vector'
+      D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(13,1):
+      This diagnostic occurred in the compiler generated function 'Grass::Grass(void)'
+      D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(15,19):
+      see reference to function 'Grass::Grass(void)'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,13): error C2653: 'PokemonType': is not a class or namespace name
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,26): error C2065: 'POISON': undeclared identifier
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,51): error C2653: 'PokemonType': is not a class or namespace name
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\Grass.hpp(22,64): error C2065: 'ROCK': undeclared identifier
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,13): error C3484: syntax error: expected '->' before the return type
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,14): error C3613: missing return type after '->' ('int' assumed)
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,14): error C3646: 'getRandomPokemonFromGrass': unknown override specifier
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(10,39): error C2059: syntax error: '('
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(11,1): error C2143: syntax error: missing ';' before '}'
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(11,1): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'WildEncounterManager.cpp')
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.cpp(6,23): error C2600: 'WildEncounterManager::WildEncounterManager': cannot define a compiler-generated special member function (must be declared in the class first)
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.cpp(7,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+      D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.cpp(6,23):
+      This diagnostic occurred in the compiler generated function 'WildEncounterManager::WildEncounterManager(void)'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.cpp(10,35): error C2039: 'getRandomPokemonFromGrass': is not a member of 'WildEncounterManager'
+      D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.hpp(8,7):
+      see declaration of 'WildEncounterManager'
+  
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.cpp(10,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.cpp(10,35): error C2146: syntax error: missing ';' before identifier 'getRandomPokemonFromGrass'
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.cpp(10,81): error C2143: syntax error: missing ';' before '{'
+D:\C++ Intermediate\Pokemon\Pokemon\WildEncounterManager.cpp(10,81): error C2447: '{': missing function header (old-style formal list?)
   Generating Code...
