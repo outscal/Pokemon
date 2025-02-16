@@ -1,0 +1,7 @@
+#pragma once
+#ifndef WILDENCOUNTERMANAGER_HPP
+#define WILDENCOUNTERMANAGER_HPP
+
+
+
+#endif
